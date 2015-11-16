@@ -13856,7 +13856,7 @@ It is common to need an initial set of elements.
 
     template<typename T> class Vector {
     public:
-        vector<std::initializer_list<T>>;
+        vector(std::initializer_list<T>);
         // ...
     };
 
