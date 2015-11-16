@@ -13554,7 +13554,7 @@ Never allow an error to be reported from a destructor, a resource deallocation f
 5. You can't use `Nefarious` objects in standard containers:
 
 
-        std::vector<nefarious> vec(10);   // this is line can std::terminate()
+        std::vector<nefarious> vec(10);   // this line can std::terminate()
 
     The standard library forbids all destructors used with it from throwing. You can't store `nefarious` objects in standard containers or use them with any other part of the standard library.
 
